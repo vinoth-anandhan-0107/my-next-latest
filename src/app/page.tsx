@@ -1,18 +1,8 @@
-'use client';
+import { redirect } from 'next/navigation';
 
-import { Button } from 'antd';
+export default function RootPage() {
+  // Redirect immediately to /dashboard
+  redirect('/dashboard');
 
-export default function Home() {
-  const helloClicked = () => {
-    console.log("hello clicked");
-
-  }
-  return (
-    <>
-      <Button type="primary" onClick={helloClicked}>
-        Hello
-      </Button>
-      <Button type="primary">word</Button>
-    </>
-  );
+  return null;
 }

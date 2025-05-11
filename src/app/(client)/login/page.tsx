@@ -4,7 +4,7 @@ import { Button, Col, Input, Row, Space, Typography } from 'antd';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import OtpInputComponent from '../../../components/login/OtpInput';
+import OtpInputComponent from '../../../components/Login/OtpInput';
 
 const Dashboard = () => {
   const [otpSent, setOtpSent] = useState(false);

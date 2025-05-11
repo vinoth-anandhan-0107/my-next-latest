@@ -9,7 +9,7 @@ const Dashboard = () => {
   const [otpSent, setOtpSent] = useState(false);
   const [timer, setTimer] = useState(15);
   const [otp, setOtp] = useState('');
-  const { t } = useTranslation('common');
+  const { t, i18n } = useTranslation('common');
 
   useEffect(() => {
     if (otpSent && timer > 0) {
@@ -87,6 +87,8 @@ const Dashboard = () => {
                 borderRadius: 8,
                 background: '#fff',
                 color: '#222',
+                direction: i18n.language === 'ar' ? 'rtl' : 'ltr',
+
               }}
             />
             <Button

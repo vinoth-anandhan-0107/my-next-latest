@@ -22,5 +22,17 @@
   "phone_number": "Phone number (Whats App number)",
   "email_address": "Email Address",
   "email_address_placeholder": "Enter Email Address",
-  "next_button": "Next"
+  "next_button": "Next",
+  "browse_files": "Browse Files...",
+  "vat_number_12": "12-month VAT returns",
+  "simah_business_report": "SIMAH Business Report",
+  "simah_owner_report": "SIMAH Owner Report",
+  "saudization_certificate": "Saudization Certificate",
+  "balady_license": "Balady License",
+  "audited_financials": "Audited Financials",
+  "submit": "Submit",
+  "iban_number": "IBAN",
+  "iban_number_placeholder": "Enter IBAN Number",
+  "bank_name": "Bank Name",
+  "bank_name_placeholder": "Enter Bank Name"
 }

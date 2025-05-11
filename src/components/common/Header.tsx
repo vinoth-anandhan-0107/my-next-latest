@@ -16,7 +16,7 @@ const Header = () => {
       justify="space-between"
     >
       <Col>
-        <MenuOutlined style={{ fontSize: 24, color: '#fff' }} />
+        <MenuOutlined style={{ fontSize: 24, color: '#fff !important' }} />
         <Typography.Text
           style={{ color: '#fff', fontSize: 18, marginLeft: 12 }}
         >

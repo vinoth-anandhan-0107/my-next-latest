@@ -56,10 +56,10 @@ const OnBoardingFields = () => {
 
           <Form.Item label={t('name')}>
             <Row gutter={16}>
-              <Col xs={24} sm={12}>
+              <Col xs={12} sm={12}>
                 <Input placeholder={t('first_name_placeholder')} />
               </Col>
-              <Col xs={24} sm={12}>
+              <Col xs={12} sm={12}>
                 <Input placeholder={t('last_name_placeholder')} />
               </Col>
             </Row>

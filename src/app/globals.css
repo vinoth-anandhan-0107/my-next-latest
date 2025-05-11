@@ -48,15 +48,3 @@ a {
 .anticon {
   color: #2a237e !important;
 }
-
-/* Target Ant Design buttons globally */
-.ant-btn {
-  color: #2a237e !important;
-  border-color: #2a237e !important;
-}
-
-.ant-btn:hover,
-.ant-btn:focus {
-  background-color: #2a237e !important;
-  border-color: #2a237e !important;
-}

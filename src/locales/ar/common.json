@@ -22,5 +22,13 @@
   "phone_number": "رقم الهاتف (رقم الواتس اب)",
   "email_address": "عنوان البريد الإلكتروني",
   "email_address_placeholder": "أدخل عنوان البريد الإلكتروني",
-  "next_button": "التالي"
+  "next_button": "التالي",
+  "browse_files": "تصفح الملفات...",
+  "vat_number_12": "إقرارات ضريبة القيمة المضافة لمدة 12 شهرًا",
+  "simah_business_report": "تقرير سمة للأعمال",
+  "simah_owner_report": "تقرير مالك سمة",
+  "saudization_certificate": "شهادة السعودة",
+  "balady_license": "رخصة بلدي",
+  "audited_financials": "المالية المدققة",
+  "submit": "يُقدِّم"
 }

@@ -1,16 +1,16 @@
 'use client';
 
+import OtpInputComponent from '@/components/login/OtpInput';
 import { Button, Col, Input, Row, Space, Typography } from 'antd';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import OtpInputComponent from '../../../components/Login/OtpInput';
 
 const Dashboard = () => {
   const [otpSent, setOtpSent] = useState(false);
   const [timer, setTimer] = useState(15);
   const [otp, setOtp] = useState('');
-  const { t, i18n } = useTranslation('common');
+  const { t } = useTranslation('common');
   const router = useRouter();
 
   useEffect(() => {
@@ -89,19 +89,10 @@ const Dashboard = () => {
                 borderRadius: 8,
                 background: '#fff',
                 color: '#222',
-                direction: i18n.language === 'ar' ? 'rtl' : 'ltr',
               }}
             />
             <Button
               type="primary"
-              style={{
-                marginTop: 16,
-                borderRadius: 8,
-                width: 140,
-                display: 'block',
-                marginLeft: 'auto',
-                marginRight: 'auto',
-              }}
               onClick={() => {
                 setOtpSent(true);
                 setTimer(15);
@@ -119,19 +110,7 @@ const Dashboard = () => {
               </div>
             </Space>
           )}
-          <Button
-            type="primary"
-            block
-            style={{
-              borderRadius: 8,
-              marginBottom: 8,
-              background: '#338aff',
-              color: '#fff',
-              border: 'none',
-              width: 220,
-            }}
-            onClick={() => router.push('/onboarding')}
-          >
+          <Button type="primary" onClick={() => router.push('/onboarding')}>
             {t('get_credit')}
           </Button>
           <div style={{ color: '#fff', marginTop: 8 }}>

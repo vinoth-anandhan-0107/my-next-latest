@@ -1,11 +1,11 @@
 'use client';
 
+import OnBoardingExtraFields from '@/components/onboarding/OnboardingFields2';
 import { Row } from 'antd';
-import OnBoardingFields from '../../../components/onboarding/onboardingFields';
 const onBoarding = () => {
   return (
     <Row align="middle" justify="center">
-      <OnBoardingFields />
+      <OnBoardingExtraFields />
     </Row>
   );
 };

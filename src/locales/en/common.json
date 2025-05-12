@@ -34,5 +34,7 @@
   "iban_number": "IBAN",
   "iban_number_placeholder": "Enter IBAN Number",
   "bank_name": "Bank Name",
-  "bank_name_placeholder": "Enter Bank Name"
+  "bank_name_placeholder": "Enter Bank Name",
+  "accept_limit": "Accept the Limit & Proceed",
+  "request_for_higher_limit": "Request for Higher Limit"
 }

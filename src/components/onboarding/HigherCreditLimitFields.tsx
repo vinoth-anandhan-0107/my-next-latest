@@ -21,7 +21,6 @@ const HigherCreditLimitFields = () => {
                 placeholder={t('browse_files')}
                 readOnly
                 suffix={<UploadOutlined style={{ fontSize: 20 }} />}
-
               />
             </Upload>
           </Form.Item>
@@ -73,10 +72,7 @@ const HigherCreditLimitFields = () => {
           <Button
             style={{
               background: '#2a237e',
-              marginBottom: 8,
-              color: '#ffffff !important',
-              border: 'none',
-              width: '100%',
+              color: '#fff'
             }}
           >
             {t('submit')}

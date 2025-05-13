@@ -20,7 +20,7 @@ const Header = () => {
         <Typography.Text
           style={{ color: '#fff', fontSize: 18, marginLeft: 12 }}
         >
-         {t('title')}
+          {t('title')}
         </Typography.Text>
       </Col>
       <Col>

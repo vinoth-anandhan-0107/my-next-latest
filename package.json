@@ -6,11 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "node scripts/test.js",
+    "test:coverage": "node scripts/test.js --watchAll=false --ci --silent --testLocationInResults --coverage --changedSince=origin/master --coverageReporters=text --coverageReporters=text-summary --json --outputFile=report.json",
+    "test:ci": "node scripts/test.js --watchAll=false --ci --silent --coverage --changedSince=origin/master --reporters=jest-html-reporter",
+    "test:hotfix": "node scripts/test.js --watchAll=false --ci --silent --coverage --coverageThreshold={} --changedSince=origin/master",
+    "test:final": "node scripts/test.js --watchAll=false --coverage --changedSince=origin/main",
+    "test:global": "node scripts/test.js --watchAll=false --ci --silent --coverage --passWithNoTests --coverageThreshold={} --runInBand",
+    "test:globalsummary": "node scripts/test.js --watchAll=false --ci --silent --testLocationInResults --coverage --coverageThreshold={} --runInBand --coverageReporters=text --coverageReporters=text-summary --json --outputFile=report.json"
   },
   "dependencies": {
     "@ant-design/icons": "^6.0.0",
     "@ant-design/nextjs-registry": "^1.0.2",
+    "@testing-library/react": "^16.3.0",
     "add": "^2.0.6",
     "antd": "^5.24.9",
     "i18next": "^25.1.2",
@@ -23,12 +31,22 @@
     "yarn": "^1.22.22"
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^29.5.14",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-i18next": "^8.1.0",
+    "@types/testing-library__user-event": "^4.2.0",
+    "babel-jest": "^29.7.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.28",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-html-reporter": "^4.1.0",
     "typescript": "^5"
   }
 }

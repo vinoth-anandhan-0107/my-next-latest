@@ -5,13 +5,12 @@ import { Button, Col, Form, Input, Row, Upload } from 'antd';
 import { useTranslation } from 'react-i18next';
 
 const OnBoardingFields = () => {
-  const { t, i18n} = useTranslation('common');
-  const direction = i18n.language === 'ar' ? 'rtl' : 'ltr';
+  const { t } = useTranslation('common');
 
   return (
     <Row gutter={16} style={{ margin: 16 }}>
       <Col span={24} xs={24} md={24}>
-        <Form layout="vertical" name="OnboardingForm" style={{ direction }}>
+        <Form layout="vertical" name="OnboardingForm">
           <Form.Item label={t('cr_number')}>
             <Input placeholder={t('cr_number_placeholder')} />
           </Form.Item>

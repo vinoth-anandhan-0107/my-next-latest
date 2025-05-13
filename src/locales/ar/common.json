@@ -30,5 +30,11 @@
   "saudization_certificate": "شهادة السعودة",
   "balady_license": "رخصة بلدي",
   "audited_financials": "المالية المدققة",
-  "submit": "يُقدِّم"
+  "submit": "يُقدِّم",
+  "iban_number": "رقم الحساب المصرفي الدولي",
+  "iban_number_placeholder": "أدخل رقم IBAN",
+  "bank_name": "اسم البنك",
+  "bank_name_placeholder": "أدخل اسم البنك",
+  "accept_limit": "اقبل الحد واستمر",
+  "request_for_higher_limit": "طلب الحد الأعلى"
 }

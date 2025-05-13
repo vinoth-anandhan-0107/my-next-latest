@@ -8,11 +8,11 @@ import NotificationComponent from '../common/NotificationComponent';
 const OnBoardingExtraFields = () => {
   const { t } = useTranslation('common');
   return (
-    <Row gutter={16} style={{ margin: 16 }}>
+    <Row gutter={16}>
       <Col span={24} xs={24} md={24}>
         <NotificationComponent
           icon={
-            <CheckCircleFilled style={{ color: '#52c41a', fontSize: '48px' }} />
+            <CheckCircleFilled style={{ fontSize: '48px' }} />
           }
           title="Congragulations"
           subtitle="Approved Credit Limit SAE 10,000"

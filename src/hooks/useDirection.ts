@@ -1,5 +1,3 @@
-'use client';
-
 import { useTranslation } from 'react-i18next';
 
 export const useDirection = (): 'ltr' | 'rtl' => {
@@ -8,6 +6,5 @@ export const useDirection = (): 'ltr' | 'rtl' => {
     typeof window !== 'undefined'
       ? localStorage.getItem('language') || i18n.language
       : i18n.language;
-
   return lang === 'ar' ? 'rtl' : 'ltr';
 };

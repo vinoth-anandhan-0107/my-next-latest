@@ -1,5 +1,5 @@
 // next-i18next.config.js
-module.exports = {
+const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'ar'],
@@ -7,3 +7,5 @@ module.exports = {
   fallbackLng: 'en',
   localePath: './src/locales',
 };
+
+export default config;
